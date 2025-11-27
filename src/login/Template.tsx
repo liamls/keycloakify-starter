@@ -56,7 +56,7 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
         <div className={kcClsx("kcLoginClass")}>
             <div id="kc-header" className={kcClsx("kcHeaderClass")}>
                 <div id="kc-header-wrapper" className={kcClsx("kcHeaderWrapperClass")}>
-                    <img src={logoUrl} width={100} />
+                    <img src={`${import.meta.env.BASE_URL}src/login/assets/logo.png`} width={100} />
                 </div>
             </div>
             <div className={kcClsx("kcFormCardClass")}>
