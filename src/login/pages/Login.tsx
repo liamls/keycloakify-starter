@@ -100,6 +100,9 @@ export default function Login(props: PageProps<Extract<KcContext, { pageId: "log
             }
         >
             <div id="kc-form">
+                <div className="warningBanner" role="warning">
+                    {msgStr("warningActivation")}
+                </div>
                 <div id="kc-form-wrapper">
                     {realm.password && (
                         <form
