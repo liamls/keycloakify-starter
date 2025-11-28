@@ -27,3 +27,7 @@ body.kcBodyClass {
     color: dimgray;
     list-style-type: "- ";
 }
+
+.login-pf-page .login-pf-signup a {
+    margin-left: 0;
+}
