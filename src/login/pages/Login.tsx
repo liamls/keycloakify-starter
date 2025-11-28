@@ -60,7 +60,7 @@ export default function Login(props: PageProps<Extract<KcContext, { pageId: "log
                     <div id="kc-registration">
                         <span>
                             {msg("contactSupport")}{" "}
-                            <a tabIndex={8} href={url.registrationUrl}>
+                            <a tabIndex={8} href={msgStr("zendeskUrl")} target="_blank" rel="noreferrer">
                                 {msg("zendesk")}
                             </a>
                         </span>

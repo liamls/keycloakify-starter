@@ -47,6 +47,19 @@ export default function Register(props: RegisterProps) {
             i18n={i18n}
             doUseDefaultCss={doUseDefaultCss}
             classes={classes}
+            displayInfo
+            infoNode={
+                <div id="kc-registration-container">
+                    <div id="kc-registration">
+                        <span>
+                            {msg("contactSupport")}{" "}
+                            <a tabIndex={8} href={msgStr("zendeskUrl")} target="_blank" rel="noreferrer">
+                                {msg("zendesk")}
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            }
             headerNode={messageHeader !== undefined ? advancedMsg(messageHeader) : msg("registerTitle")}
             displayMessage={messagesPerField.exists("global")}
         >

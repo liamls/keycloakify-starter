@@ -7,8 +7,10 @@ const { useI18n, ofTypeI18n } = i18nBuilder
     .withThemeName<ThemeName>()
     .withCustomTranslations({
         en: {
+            newsletterUrl: "https://www.fun-mooc.fr/en/actualites/infolettres/",
             contactSupport: "If you face any issues, contact the support.",
             zendesk: "ZenDesk Support",
+            zendeskUrl:"https://www.fun-mooc.help/hc/en-gb/requests/new",
             warningActivation: "The account database is being updated. If you already have a FUN account, you must reactivate it to keep it. Without reactivation, your account will be deactivated. If you have already completed this reactivation between XXXX and XXXX, you can ignore this message.",
             optionnalField: "optional",
             passwordInstruction1: "At least 14 characters",
@@ -17,8 +19,10 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             passwordInstruction4: "At least one digit",
         },
         fr: {
+            newsletterUrl: "https://www.fun-mooc.fr/fr/actualites/infolettres/",
             contactSupport: "En cas de problème, contactez l’assistance technique.",
             zendesk: "Support ZenDesk",
+            zendeskUrl:"https://www.fun-mooc.help/hc/fr/requests/new",
             warningActivation:  "La base des comptes évolue. Si vous possédez déjà un compte FUN, vous devez le réactiver pour le conserver. Sans réactivation, votre compte sera désactivé. Si vous avez déjà procédé à cette réactivation entre le XXXX et le XXXX, vous pouvez ignorer ce message.",
             optionnalField:  "optionnel",
             passwordInstruction1: "Au moins 14 caractères",
