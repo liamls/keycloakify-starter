@@ -7,6 +7,8 @@ const { useI18n, ofTypeI18n } = i18nBuilder
     .withThemeName<ThemeName>()
     .withCustomTranslations({
         en: {
+            subscribeNewsletter: "Discover the newsletters you can subscribe to by",
+            newsletter: "clicking here.",
             newsletterUrl: "https://www.fun-mooc.fr/en/actualites/infolettres/",
             contactSupport: "If you face any issues,",
             zendesk: "contact the support.",
@@ -19,6 +21,8 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             passwordInstruction4: "At least one digit",
         },
         fr: {
+            subscribeNewsletter: "Découvrer les infolettres auxquelles vous pouvez vous inscrire en",
+            newsletter: "cliquant ici.",
             newsletterUrl: "https://www.fun-mooc.fr/fr/actualites/infolettres/",
             contactSupport: "En cas de problème,",
             zendesk: "contactez l’assistance technique.",

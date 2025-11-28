@@ -88,6 +88,12 @@ export default function Register(props: RegisterProps) {
                     </div>
                 )}
                 <div className={kcClsx("kcFormGroupClass")}>
+                    <div className="newsletterBlock">
+                        <span>{msgStr("subscribeNewsletter")}</span>
+                        <a tabIndex={8} href={msgStr("newsletterUrl")} target="_blank" rel="noreferrer">
+                            {msg("newsletter")}
+                        </a>
+                    </div>
                     <div id="kc-form-options" className={kcClsx("kcFormOptionsClass")}>
                         <div className={kcClsx("kcFormOptionsWrapperClass")}>
                             <span>
@@ -95,7 +101,6 @@ export default function Register(props: RegisterProps) {
                             </span>
                         </div>
                     </div>
-
                     {recaptchaRequired && !recaptchaVisible && recaptchaAction !== undefined ? (
                         <div id="kc-form-buttons" className={kcClsx("kcFormButtonsClass")}>
                             <button
