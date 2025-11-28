@@ -70,7 +70,12 @@ export default function UserProfileFormFields(props: UserProfileFormFieldsProps<
                                         advancedMsg(attribute.displayName ?? "")
                                     )}
                                 </label>
-                                {!attribute.required && <> {msg("optionnalField")}</>}
+                                {!attribute.required && (
+                                    <div className="optionnalField">
+                                        {" - "}
+                                        {msg("optionnalField")}
+                                    </div>
+                                )}
                             </div>
                             <div className={kcClsx("kcInputWrapperClass")}>
                                 {attribute.annotations.inputHelperTextBefore !== undefined && (
@@ -99,6 +104,14 @@ export default function UserProfileFormFields(props: UserProfileFormFieldsProps<
                                     >
                                         {advancedMsg(attribute.annotations.inputHelperTextAfter)}
                                     </div>
+                                )}
+                                {attribute.name === "password" && (
+                                    <ul className={"passwordInputHelper"} id={`form-help-text-after-${attribute.name}`} aria-live="polite">
+                                        <li>{msg("passwordInstruction1")}</li>
+                                        <li>{msg("passwordInstruction2")}</li>
+                                        <li>{msg("passwordInstruction3")}</li>
+                                        <li>{msg("passwordInstruction4")}</li>
+                                    </ul>
                                 )}
                                 {AfterField !== undefined && (
                                     <AfterField
