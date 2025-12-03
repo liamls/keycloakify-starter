@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+body.kcBodyClass {
+    background: url(./assets/background.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.warningBanner {
+    background-color: #fff3cd;
+    color: #5c470a;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.optionnalField {
+    display: inline;
+    color: dimgray;
+}
+
+.passwordInputHelper {
+    list-style: inside;
+    margin-top: 1rem;
+    color: dimgray;
+    list-style-type: "- ";
+}
+
+.login-pf-page .login-pf-signup a {
+    margin-left: 0;
+}
+.newsletterBlock {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    margin-bottom: 0.55rem;
+}
+.newsletterBlock > * {
+    margin: 0.1rem;
+}
+
+.disabled {
+    color: dimgray;
+}
