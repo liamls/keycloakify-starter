@@ -4,6 +4,7 @@
 # email/html/email-test.ftl
 # email/html/email-verification.ftl
 # email/html/executeActions.ftl
+# email/html/password-reset.ftl
 # email/html/template.ftl
 # === Owned files end =====
 
@@ -21,7 +22,6 @@
 /email/html/event-user_disabled_by_temporary_lockout.ftl
 /email/html/identity-provider-link.ftl
 /email/html/org-invite.ftl
-/email/html/password-reset.ftl
 /email/messages/messages_ar.properties
 /email/messages/messages_ca.properties
 /email/messages/messages_cs.properties
