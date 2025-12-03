@@ -7,6 +7,16 @@
 
 <#macro emailLayout>
 <html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 1rem;
+        }
+    </style>
+</head>
 <body>
     <img src="${url.resourcesUrl}/logo.png" width="100" height="100" alt="Logo FUN">
     <#nested>
