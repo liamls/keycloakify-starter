@@ -8,6 +8,7 @@
 <#macro emailLayout>
 <html>
 <body>
+    <img src="${url.resourcesUrl}/logo.png" width="100" height="100" alt="Logo FUN">
     <#nested>
 </body>
 </html>

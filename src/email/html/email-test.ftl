@@ -5,6 +5,5 @@
   -->
 <#import "template.ftl" as layout>
 <@layout.emailLayout>
-<img src="${url.resourcesUrl}/logo.png" width="100" height="100" alt="Logo FUN">
 ${kcSanitize(msg("emailTestBodyHtml",realmName))?no_esc}
 </@layout.emailLayout>

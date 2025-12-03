@@ -7,6 +7,5 @@
 
 <#import "template.ftl" as layout>
 <@layout.emailLayout>
-<img src="${url.resourcesUrl}/logo.png" width="100" height="100" alt="Logo FUN">
 ${kcSanitize(msg("emailVerificationBodyHtml",link, linkExpiration, realmName, linkExpirationFormatter(linkExpiration)))?no_esc}
 </@layout.emailLayout>
