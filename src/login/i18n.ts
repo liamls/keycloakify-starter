@@ -23,7 +23,8 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             passwordInstruction1: "At least 14 characters",
             passwordInstruction2: "At least one uppercase letter",
             passwordInstruction3: "At least one lowercase letter",
-            passwordInstruction4: "At least one digit"
+            passwordInstruction4: "At least one digit",
+            passwordInstruction5: "Au moins un caractère spécial"
         },
         fr: {
             newsletterInfo: "Ce que nous vous enverrons :",
@@ -43,7 +44,8 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             passwordInstruction1: "Au moins 14 caractères",
             passwordInstruction2: "Au moins une lettre majuscule",
             passwordInstruction3: "Au moins une lettre minuscule",
-            passwordInstruction4: "Au moins un chiffre"
+            passwordInstruction4: "Au moins un chiffre",
+            passwordInstruction5: "Au moins un caractère spécial"
         }
     })
     .build();

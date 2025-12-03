@@ -111,6 +111,7 @@ export default function UserProfileFormFields(props: UserProfileFormFieldsProps<
                                         <li>{msg("passwordInstruction2")}</li>
                                         <li>{msg("passwordInstruction3")}</li>
                                         <li>{msg("passwordInstruction4")}</li>
+                                        <li>{msg("passwordInstruction5")}</li>
                                     </ul>
                                 )}
                                 {AfterField !== undefined && (
