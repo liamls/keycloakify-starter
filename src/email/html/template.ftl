@@ -18,7 +18,7 @@
     </style>
 </head>
 <body>
-    <img src="${url.resourcesUrl}/logo.png" width="100" height="100" alt="Logo FUN">
+    <img src="${url.resourcesUrl}/logo.png" height="100" alt="Logo FUN">
     <#nested>
 </body>
 </html>
