@@ -24,7 +24,9 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             passwordInstruction2: "At least one uppercase letter",
             passwordInstruction3: "At least one lowercase letter",
             passwordInstruction4: "At least one digit",
-            passwordInstruction5: "Au moins un caractère spécial"
+            passwordInstruction5: "Au moins un caractère spécial",
+            shortTermsTitle: "Summary of our Privacy Policy", 
+            longTermsTitle: "Full Version of our Privacy Policy", 
         },
         fr: {
             newsletterInfo: "Ce que nous vous enverrons :",
@@ -45,7 +47,9 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             passwordInstruction2: "Au moins une lettre majuscule",
             passwordInstruction3: "Au moins une lettre minuscule",
             passwordInstruction4: "Au moins un chiffre",
-            passwordInstruction5: "Au moins un caractère spécial"
+            passwordInstruction5: "Au moins un caractère spécial",
+            shortTermsTitle: "Résumé de notre politique de confidentialité", 
+            longTermsTitle: "Version complète de notre politique de confidentialité", 
         }
     })
     .build();

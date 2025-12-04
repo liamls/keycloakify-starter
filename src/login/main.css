@@ -43,3 +43,34 @@ body.kcBodyClass {
 .disabled {
     color: dimgray;
 }
+
+.accordions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.termsTitle {
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.termsBody {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.termsBodyList {
+    list-style: inside;
+    list-style-type: "- ";
+}
+
+.termsBodyTitle {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #0078c0;
+}
