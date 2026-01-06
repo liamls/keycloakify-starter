@@ -557,8 +557,9 @@
                 {
                     "id": "576982e2-6fb3-4752-8724-5ff390ea8301",
                     "type": "password",
-                    "createdDate": 1764844364075,
-                    "secretData": "{\"value\":\"J5dDE7+1tqFBMkVIoRpICMG30zLKGMdAvZupaUYV8PY=\",\"salt\":\"DRlE544XW/xOHuCy8x/TOg==\",\"additionalParameters\":{}}",
+                    "userLabel": "My password",
+                    "createdDate": 1716183916529,
+                    "secretData": "{\"value\":\"9hwJ989FAr0UgT0MfffNYSI6Zf/3qT/y17DTUcwbiEM=\",\"salt\":\"C3ZnHzgPd+0Lemw4olCOgA==\",\"additionalParameters\":{}}",
                     "credentialData": "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
                 }
             ],
