@@ -18,7 +18,7 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             zendesk: "contact the support.",
             zendeskUrl: "https://www.fun-mooc.help/hc/en-gb/requests/new",
             warningActivation:
-                "The account database is being updated. If you already have a FUN account, you must reactivate it to keep it. Without reactivation, your account will be deactivated. If you have already completed this reactivation between XXXX and XXXX, you can ignore this message.",
+                "The account database is being updated. If you already have a FUN account, you must reactivate it to keep it. Without reactivation, your account will be deactivated. If you have already completed this reactivation, you can ignore this message.",
             optionnalField: "optional",
             passwordInstruction1: "At least 14 characters",
             passwordInstruction2: "At least one uppercase letter",
@@ -33,7 +33,7 @@ const { useI18n, ofTypeI18n } = i18nBuilder
                 "Public username used across FUN applications. Please avoid any personal information.",
             cguText1: "In order to create your account, ",
             cguText2: "please read and validate the terms and conditions.",
-            cguLink: "https://google.fr/"
+            cguLink: "https://www.fun-mooc.fr/en/general-terms-service/"
         },
         fr: {
             newsletterInfo: "Ce que nous vous enverrons :",
@@ -48,7 +48,7 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             zendesk: "contactez l’assistance technique.",
             zendeskUrl: "https://www.fun-mooc.help/hc/fr/requests/new",
             warningActivation:
-                "La base des comptes évolue. Si vous possédez déjà un compte FUN, vous devez le réactiver pour le conserver. Sans réactivation, votre compte sera désactivé. Si vous avez déjà procédé à cette réactivation entre le XXXX et le XXXX, vous pouvez ignorer ce message.",
+                "La base des comptes évolue. Si vous possédez déjà un compte FUN, vous devez le réactiver pour le conserver. Sans réactivation, votre compte sera désactivé. Si vous avez déjà procédé à cette réactivation, vous pouvez ignorer ce message.",
             optionnalField: "optionnel",
             passwordInstruction1: "Au moins 14 caractères",
             passwordInstruction2: "Au moins une lettre majuscule",
@@ -63,7 +63,7 @@ const { useI18n, ofTypeI18n } = i18nBuilder
                 "Identifiant public utilisé sur les applications FUN. Évitez toute information personnelle.",
             cguText1: "Afin de finaliser la création de votre compte, ",
             cguText2: "veuillez lire et accepter les CGU",
-            cguLink: "https://google.fr/"
+            cguLink: "https://www.fun-mooc.fr/fr/cgu/"
         }
     })
     .build();

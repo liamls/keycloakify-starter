@@ -76,12 +76,12 @@ body.kcBodyClass {
 }
 
 .cguCheckbox {
-    gap: 0.5rem;
+    display: row;
+    gap: 0.3rem;
     display: flex;
-    align-items: flex-start;
     margin: 1rem 0;
     & input {
-        margin-top: 0.2rem;
+        margin: 0;
     }
     & label {
         margin-bottom: 0;
