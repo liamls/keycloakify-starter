@@ -25,10 +25,15 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             passwordInstruction3: "At least one lowercase letter",
             passwordInstruction4: "At least one digit",
             passwordInstruction5: "Au moins un caractère spécial",
+            termsTitle: "Privacy Policy & TCs",
             shortTermsTitle: "Summary of our Privacy Policy",
             longTermsTitle: "Full Version of our Privacy Policy",
+            cguTitle: "Terms and Conditions",
             usernameInstruction1:
-                "Public username used across FUN applications. Please avoid any personal information."
+                "Public username used across FUN applications. Please avoid any personal information.",
+            cguText1: "In order to create your account, ",
+            cguText2: "please read and validate the terms and conditions.",
+            cguLink: "https://google.fr/"
         },
         fr: {
             newsletterInfo: "Ce que nous vous enverrons :",
@@ -50,10 +55,15 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             passwordInstruction3: "Au moins une lettre minuscule",
             passwordInstruction4: "Au moins un chiffre",
             passwordInstruction5: "Au moins un caractère spécial",
+            termsTitle: "Politique de confidentialité & CGU",
             shortTermsTitle: "Résumé de notre politique de confidentialité",
             longTermsTitle: "Version complète de notre politique de confidentialité",
+            cguTitle: "Conditions Générales d'Utilisation",
             usernameInstruction1:
-                "Identifiant public utilisé sur les applications FUN. Évitez toute information personnelle."
+                "Identifiant public utilisé sur les applications FUN. Évitez toute information personnelle.",
+            cguText1: "Afin de finaliser la création de votre compte, ",
+            cguText2: "veuillez lire et accepter les CGU",
+            cguLink: "https://google.fr/"
         }
     })
     .build();

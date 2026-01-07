@@ -74,3 +74,16 @@ body.kcBodyClass {
     font-weight: 600;
     color: #0078c0;
 }
+
+.cguCheckbox {
+    gap: 0.5rem;
+    display: flex;
+    align-items: flex-start;
+    margin: 1rem 0;
+    & input {
+        margin-top: 0.2rem;
+    }
+    & label {
+        margin-bottom: 0;
+    }
+}

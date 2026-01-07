@@ -4,6 +4,7 @@ import type { KcContext } from "../KcContext";
 import type { I18n } from "../i18n";
 import { Accordion, AccordionDetails, AccordionSummary } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { useState } from "react";
 
 export default function Terms(props: PageProps<Extract<KcContext, { pageId: "terms.ftl" }>, I18n>) {
     const { kcContext, i18n, doUseDefaultCss, Template, classes } = props;
@@ -16,6 +17,8 @@ export default function Terms(props: PageProps<Extract<KcContext, { pageId: "ter
     const { msg, msgStr } = i18n;
 
     const { url } = kcContext;
+
+    const [isChecked, setIsChecked] = useState(false);
 
     return (
         <Template
@@ -70,6 +73,36 @@ export default function Terms(props: PageProps<Extract<KcContext, { pageId: "ter
                         <div id="kc-terms-text">{msg("termsText")}</div>
                     </AccordionDetails>
                 </Accordion>
+                <Accordion
+                    sx={{
+                        backgroundColor: "transparent",
+                        border: "3px solid #ceddff",
+                        boxShadow: "none",
+                        borderRadius: 1,
+                        "&:before": { display: "none" }
+                    }}
+                >
+                    <AccordionSummary
+                        sx={{ backgroundColor: "#ceddff" }}
+                        aria-controls="panel2-content"
+                        id="panel2-header"
+                        expandIcon={<ExpandMoreIcon />}
+                    >
+                        <div className="termsTitle">{msg("cguTitle")}</div>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <div id="kc-terms-text">{msg("termsText")}</div>
+                    </AccordionDetails>
+                </Accordion>
+            </div>
+            <div className="cguCheckbox">
+                <input id="checkboxCgu" type="checkbox" checked={isChecked} onChange={() => setIsChecked(!isChecked)} />
+                <label htmlFor="checkboxCgu">
+                    {msg("cguText1")}
+                    <a href={msgStr("cguLink")} target="_blank" rel="noreferrer">
+                        {msg("cguText2")}
+                    </a>
+                </label>
             </div>
             <form className="form-actions" action={url.loginAction} method="POST">
                 <input
@@ -78,6 +111,7 @@ export default function Terms(props: PageProps<Extract<KcContext, { pageId: "ter
                     id="kc-accept"
                     type="submit"
                     value={msgStr("doAccept")}
+                    disabled={!isChecked}
                 />
                 <input
                     className={kcClsx("kcButtonClass", "kcButtonDefaultClass", "kcButtonLargeClass")}
@@ -85,6 +119,7 @@ export default function Terms(props: PageProps<Extract<KcContext, { pageId: "ter
                     id="kc-decline"
                     type="submit"
                     value={msgStr("doDecline")}
+                    disabled={isChecked}
                 />
             </form>
             <div className="clearfix" />
