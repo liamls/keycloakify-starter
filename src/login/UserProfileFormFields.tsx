@@ -114,6 +114,11 @@ export default function UserProfileFormFields(props: UserProfileFormFieldsProps<
                                         <li>{msg("passwordInstruction5")}</li>
                                     </ul>
                                 )}
+                                {attribute.name === "username" && (
+                                    <ul className={"passwordInputHelper"} id={`form-help-text-after-${attribute.name}`} aria-live="polite">
+                                        <li>{msg("usernameInstruction1")}</li>
+                                    </ul>
+                                )}
                                 {AfterField !== undefined && (
                                     <AfterField
                                         attribute={attribute}

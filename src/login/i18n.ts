@@ -25,8 +25,10 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             passwordInstruction3: "At least one lowercase letter",
             passwordInstruction4: "At least one digit",
             passwordInstruction5: "Au moins un caractère spécial",
-            shortTermsTitle: "Summary of our Privacy Policy", 
-            longTermsTitle: "Full Version of our Privacy Policy", 
+            shortTermsTitle: "Summary of our Privacy Policy",
+            longTermsTitle: "Full Version of our Privacy Policy",
+            usernameInstruction1:
+                "Public username used across FUN applications. Please avoid any personal information."
         },
         fr: {
             newsletterInfo: "Ce que nous vous enverrons :",
@@ -48,8 +50,10 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             passwordInstruction3: "Au moins une lettre minuscule",
             passwordInstruction4: "Au moins un chiffre",
             passwordInstruction5: "Au moins un caractère spécial",
-            shortTermsTitle: "Résumé de notre politique de confidentialité", 
-            longTermsTitle: "Version complète de notre politique de confidentialité", 
+            shortTermsTitle: "Résumé de notre politique de confidentialité",
+            longTermsTitle: "Version complète de notre politique de confidentialité",
+            usernameInstruction1:
+                "Identifiant public utilisé sur les applications FUN. Évitez toute information personnelle."
         }
     })
     .build();
