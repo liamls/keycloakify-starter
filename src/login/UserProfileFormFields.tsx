@@ -57,7 +57,7 @@ export default function UserProfileFormFields(props: UserProfileFormFieldsProps<
                             style={{
                                 display:
                                     attribute.annotations.inputType === "hidden" ||
-                                    (attribute.name === "password-confirm" && !doMakeUserConfirmPassword)
+                                        (attribute.name === "password-confirm" && !doMakeUserConfirmPassword)
                                         ? "none"
                                         : undefined
                             }}
@@ -116,7 +116,18 @@ export default function UserProfileFormFields(props: UserProfileFormFieldsProps<
                                 )}
                                 {attribute.name === "username" && (
                                     <ul className={"passwordInputHelper"} id={`form-help-text-after-${attribute.name}`} aria-live="polite">
-                                        <li>{msg("usernameInstruction1")}</li>
+                                        <li>
+                                            <strong>{msg("usernameInstruction1Title")}</strong>
+                                            {msg("usernameInstruction1")}
+                                        </li>
+                                        <li>
+                                            <strong>{msg("usernameInstruction2Title")}</strong>
+                                            {msg("usernameInstruction2")}
+                                        </li>
+                                        <li>
+                                            <strong>{msg("usernameInstruction3Title")}</strong>
+                                            {msg("usernameInstruction3")}
+                                        </li>
                                     </ul>
                                 )}
                                 {AfterField !== undefined && (
@@ -334,7 +345,11 @@ function InputTag(props: InputFieldByTypeProps & { fieldIndex: number | undefine
                 disabled={attribute.readOnly}
                 autoComplete={attribute.autocomplete}
                 placeholder={
-                    attribute.annotations.inputTypePlaceholder === undefined ? undefined : advancedMsgStr(attribute.annotations.inputTypePlaceholder)
+                    attribute.annotations.inputTypePlaceholder === undefined
+                        ? attribute.name === "username"
+                            ? "ex: pmoriarty"
+                            : undefined
+                        : advancedMsgStr(attribute.annotations.inputTypePlaceholder)
                 }
                 pattern={attribute.annotations.inputTypePattern}
                 size={attribute.annotations.inputTypeSize === undefined ? undefined : parseInt(`${attribute.annotations.inputTypeSize}`)}

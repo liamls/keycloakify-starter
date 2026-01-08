@@ -29,8 +29,12 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             shortTermsTitle: "Summary of our Privacy Policy",
             longTermsTitle: "Full Version of our Privacy Policy",
             cguTitle: "Terms and Conditions",
-            usernameInstruction1:
-                "Public username used across FUN applications. Please avoid any personal information.",
+            usernameInstruction1Title: "Visible by everyone",
+            usernameInstruction1: " : displayed publicly in any discussion or forum where you participate",
+            usernameInstruction2Title: "Final",
+            usernameInstruction2: " : cannot be changed later",
+            usernameInstruction3Title: "Free and anonymous",
+            usernameInstruction3: " : may not refer to your real identity",
             cguText1: "In order to create your account, ",
             cguText2: "please read and validate the terms and conditions.",
             cguLink: "https://www.fun-mooc.fr/en/general-terms-service/"
@@ -59,8 +63,12 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             shortTermsTitle: "Résumé de notre politique de confidentialité",
             longTermsTitle: "Version complète de notre politique de confidentialité",
             cguTitle: "Conditions Générales d'Utilisation",
-            usernameInstruction1:
-                "Identifiant public utilisé sur les applications FUN. Évitez toute information personnelle.",
+            usernameInstruction1Title: "Visible par tous",
+            usernameInstruction1: " : s'affichera publiquement dans toute discussion ou forum où vous participerez",
+            usernameInstruction2Title: "Définitif",
+            usernameInstruction2: " : ne pourra pas être modifié ultérieurement",
+            usernameInstruction3Title: "Libre et anonyme",
+            usernameInstruction3: " : peut ne pas faire référence à votre identité réelle",
             cguText1: "Afin de finaliser la création de votre compte, ",
             cguText2: "veuillez lire et accepter les CGU",
             cguLink: "https://www.fun-mooc.fr/fr/cgu/"
