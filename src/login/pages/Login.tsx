@@ -36,8 +36,6 @@ export default function Login(props: PageProps<Extract<KcContext, { pageId: "log
         i18n
     });
 
-    console.log("toto");
-
     return (
         <Template
             kcContext={kcContext}
