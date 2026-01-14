@@ -107,3 +107,14 @@ body.kcBodyClass {
 #kc-terms-text > div {
     margin-bottom: 0.75rem;
 }
+
+.form-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#kc-decline {
+    background-color: #dee8ff;
+    color: black;
+}

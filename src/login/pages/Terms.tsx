@@ -285,20 +285,20 @@ export default function Terms(props: PageProps<Extract<KcContext, { pageId: "ter
             </div>
             <form className="form-actions" action={url.loginAction} method="POST">
                 <input
-                    className={kcClsx("kcButtonClass", "kcButtonClass", "kcButtonClass", "kcButtonPrimaryClass", "kcButtonLargeClass")}
-                    name="accept"
-                    id="kc-accept"
-                    type="submit"
-                    value={msgStr("doAccept")}
-                    disabled={!isChecked}
-                />
-                <input
                     className={kcClsx("kcButtonClass", "kcButtonDefaultClass", "kcButtonLargeClass")}
                     name="cancel"
                     id="kc-decline"
                     type="submit"
                     value={msgStr("doDecline")}
                     disabled={isChecked}
+                />
+                <input
+                    className={kcClsx("kcButtonClass", "kcButtonClass", "kcButtonClass", "kcButtonPrimaryClass", "kcButtonLargeClass")}
+                    name="accept"
+                    id="kc-accept"
+                    type="submit"
+                    value={msgStr("doAccept")}
+                    disabled={!isChecked}
                 />
             </form>
             <div className="clearfix" />
