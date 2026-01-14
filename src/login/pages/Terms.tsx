@@ -49,7 +49,43 @@ export default function Terms(props: PageProps<Extract<KcContext, { pageId: "ter
                         <div className="termsTitle">{msg("shortTermsTitle")}</div>
                     </AccordionSummary>
                     <AccordionDetails>
-                        <div id="kc-terms-text">{msg("termsText")}</div>
+                        <div id="kc-terms-text">
+                            <h4 className="terms-subtitle">{msg("privacySummary_mainTitle")}</h4>
+                            <span>{msg("privacySummary_rightsIntro")}</span>
+                            <ul className="terms-list">
+                                <li>{msg("privacySummary_rightsItem1")}</li>
+                                <li>{msg("privacySummary_rightsItem2")}</li>
+                            </ul>
+
+                            <h4 className="terms-subtitle">{msg("privacySummary_dataHeldTitle")}</h4>
+                            <ul className="terms-list">
+                                <li>
+                                    {msg("privacySummary_dataHeldItem1Title")}
+                                    {msg("privacySummary_dataHeldItem1")}
+                                </li>
+                                <li>
+                                    {msg("privacySummary_dataHeldItem2Title")}
+                                    {msg("privacySummary_dataHeldItem2")}
+                                </li>
+                            </ul>
+
+                            <h4 className="terms-subtitle">{msg("privacySummary_useTitle")}</h4>
+                            <ul className="terms-list">
+                                <li>{msg("privacySummary_useItem1")}</li>
+                                <li>{msg("privacySummary_useItem2")}</li>
+                                <li>{msg("privacySummary_useItem3")}</li>
+                                <li>{msg("privacySummary_useItem4")}</li>
+                                <li>{msg("privacySummary_useItem5")}</li>
+                            </ul>
+
+                            <h4 className="terms-subtitle">{msg("privacySummary_sharedTitle")}</h4>
+                            <ul className="terms-list">
+                                <li>{msg("privacySummary_sharedItem1")}</li>
+                                <li>{msg("privacySummary_sharedItem2")}</li>
+                                <li>{msg("privacySummary_sharedItem3")}</li>
+                                <li>{msg("privacySummary_sharedItem4")}</li>
+                            </ul>
+                        </div>
                     </AccordionDetails>
                 </Accordion>
                 <Accordion

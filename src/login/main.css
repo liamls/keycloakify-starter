@@ -87,3 +87,15 @@ body.kcBodyClass {
         margin-bottom: 0;
     }
 }
+
+.terms-list {
+    list-style-type: "› ";
+    padding-left: 20px;
+}
+
+.terms-subtitle {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
