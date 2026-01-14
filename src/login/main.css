@@ -118,3 +118,21 @@ body.kcBodyClass {
     background-color: #dee8ff;
     color: black;
 }
+
+.terms-accordion {
+    border: 3px solid #ceddff;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.terms-accordion:has(.terms-accordion-header:hover) {
+    border-color: #aebfd8;
+}
+
+.terms-accordion-header {
+    background-color: #ceddff !important;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.terms-accordion-header:hover {
+    background-color: #aebfd8 !important;
+}

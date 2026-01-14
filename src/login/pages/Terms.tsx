@@ -32,16 +32,16 @@ export default function Terms(props: PageProps<Extract<KcContext, { pageId: "ter
             <div className="accordions">
                 <Accordion
                     defaultExpanded
+                    className="terms-accordion"
                     sx={{
                         background: "transparent",
-                        border: "3px solid #ceddff",
                         boxShadow: "none",
                         borderRadius: 1,
                         "&:before": { display: "none" }
                     }}
                 >
                     <AccordionSummary
-                        sx={{ backgroundColor: "#ceddff" }}
+                        className="terms-accordion-header"
                         aria-controls="panel1-content"
                         id="panel1-header"
                         expandIcon={<ExpandMoreIcon />}
@@ -89,16 +89,16 @@ export default function Terms(props: PageProps<Extract<KcContext, { pageId: "ter
                     </AccordionDetails>
                 </Accordion>
                 <Accordion
+                    className="terms-accordion"
                     sx={{
                         backgroundColor: "transparent",
-                        border: "3px solid #ceddff",
                         boxShadow: "none",
                         borderRadius: 1,
                         "&:before": { display: "none" }
                     }}
                 >
                     <AccordionSummary
-                        sx={{ backgroundColor: "#ceddff" }}
+                        className="terms-accordion-header"
                         aria-controls="panel2-content"
                         id="panel2-header"
                         expandIcon={<ExpandMoreIcon />}
@@ -229,16 +229,16 @@ export default function Terms(props: PageProps<Extract<KcContext, { pageId: "ter
                     </AccordionDetails>
                 </Accordion>
                 <Accordion
+                    className="terms-accordion"
                     sx={{
                         backgroundColor: "transparent",
-                        border: "3px solid #ceddff",
                         boxShadow: "none",
                         borderRadius: 1,
                         "&:before": { display: "none" }
                     }}
                 >
                     <AccordionSummary
-                        sx={{ backgroundColor: "#ceddff" }}
+                        className="terms-accordion-header"
                         aria-controls="panel2-content"
                         id="panel2-header"
                         expandIcon={<ExpandMoreIcon />}
