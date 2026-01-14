@@ -24,7 +24,7 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             warningActivation:
                 "Our login system is changing! If you already have a FUN account, please update it by creating a new password and accepting the Terms and Conditions of Use. This step is mandatory to maintain access to your account, otherwise it will be deactivated.To update your account, check the inbox of the email address associated with your account and follow the link in the message sent by no-reply@fun-edu.fr. If you have already done this, you can ignore this message.",
             optionnalField: "optional",
-            passwordInstruction1: "At least 14 characters",
+            passwordInstruction1: "Between 3 and 14 characters",
             passwordInstruction2: "At least one uppercase letter",
             passwordInstruction3: "At least one lowercase letter",
             passwordInstruction4: "At least one digit",
@@ -206,7 +206,7 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             warningActivation:
                 "Notre système de connexion évolue ! Si vous possédez déjà un compte FUN, merci de le mettre à jour en créant un nouveau mot de passe et en acceptant les CGU (Conditions Générales d’Utilisation). Cette étape est obligatoire pour conserver l’accès à votre compte, sans quoi il sera désactivé. Pour effectuer la mise à jour, consultez la boîte de réception de l’adresse e-mail associée à votre compte et suivez le lien indiqué dans le message envoyé par no-reply@fun-edu.fr. Si vous avez déjà réalisé cette action, vous pouvez ignorer ce message.",
             optionnalField: "optionnel",
-            passwordInstruction1: "Au moins 14 caractères",
+            passwordInstruction1: "Entre 3 et 4 caractères",
             passwordInstruction2: "Au moins une lettre majuscule",
             passwordInstruction3: "Au moins une lettre minuscule",
             passwordInstruction4: "Au moins un chiffre",
