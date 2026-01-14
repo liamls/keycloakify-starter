@@ -109,7 +109,7 @@ export default function Terms(props: PageProps<Extract<KcContext, { pageId: "ter
                         <div id="kc-terms-text">
                             <div>
                                 {msg("privacyFull_intro")}{" "}
-                                <a href="https://www.fun-mooc.fr/" target="_blank" rel="noreferrer">
+                                <a href={msgStr("funMoocUrl")} target="_blank" rel="noreferrer">
                                     {msg("privacyFull_introLink")}
                                 </a>
                                 {msg("privacyFull_introEnd")}
@@ -165,7 +165,7 @@ export default function Terms(props: PageProps<Extract<KcContext, { pageId: "ter
                                 <li>{msg("privacyFull_detailItem9")}</li>
                                 <li>
                                     {msg("privacyFull_detailItem10")}{" "}
-                                    <a href="https://www.cnil.fr/fr/la-protection-des-donnees-dans-le-monde" target="_blank" rel="noreferrer">
+                                    <a href={msgStr("cnilMapUrl")} target="_blank" rel="noreferrer">
                                         {msg("privacyFull_detailItem10Link")}
                                     </a>{" "}
                                     {msg("privacyFull_detailItem10End")}
@@ -177,7 +177,7 @@ export default function Terms(props: PageProps<Extract<KcContext, { pageId: "ter
                                         {msg("privacyFull_detailItem12Link")}
                                     </a>
                                     {msg("privacyFull_detailItem12Mid")}{" "}
-                                    <a href="https://www.cnil.fr/fr/cnil-direct/question/844" target="_blank" rel="noreferrer">
+                                    <a href={msgStr("cnilComplaintUrl")} target="_blank" rel="noreferrer">
                                         {msg("privacyFull_detailItem12Link2")}
                                     </a>
                                 </li>
@@ -186,25 +186,25 @@ export default function Terms(props: PageProps<Extract<KcContext, { pageId: "ter
                             <h4 className="terms-subtitle">{msg("privacyFull_cookiesTitle")}</h4>
                             <div>
                                 {msg("privacyFull_cookiesText1")}{" "}
-                                <a href="https://www.fun-mooc.fr/" target="_blank" rel="noreferrer">
+                                <a href={msgStr("funMoocUrl")} target="_blank" rel="noreferrer">
                                     {msg("privacyFull_cookiesLink")}
                                 </a>
                                 {msg("privacyFull_cookiesText2")}
                             </div>
                             <div>
                                 {msg("privacyFull_cookiesText3")}{" "}
-                                <a href="https://www.fun-mooc.fr/" target="_blank" rel="noreferrer">
+                                <a href={msgStr("funMoocUrl")} target="_blank" rel="noreferrer">
                                     {msg("privacyFull_cookiesLink")}
                                 </a>{" "}
                                 {msg("privacyFull_cookiesText4")}
                             </div>
                             <div>
                                 {msg("privacyFull_cookiesText5")}{" "}
-                                <a href="https://www.cnil.fr/" target="_blank" rel="noreferrer">
+                                <a href={msgStr("cnilUrl")} target="_blank" rel="noreferrer">
                                     www.cnil.fr
                                 </a>
                                 {msg("privacyFull_cookiesText6")}{" "}
-                                <a href="https://www.fun-mooc.fr/" target="_blank" rel="noreferrer">
+                                <a href={msgStr("funMoocUrl")} target="_blank" rel="noreferrer">
                                     {msg("privacyFull_cookiesLink")}
                                 </a>{" "}
                                 {msg("privacyFull_cookiesText7")}
@@ -216,11 +216,11 @@ export default function Terms(props: PageProps<Extract<KcContext, { pageId: "ter
                             <h4 className="terms-subtitle">{msg("privacyFull_usersTitle")}</h4>
                             <div>
                                 {msg("privacyFull_usersText1")}{" "}
-                                <a href="https://www.fun-mooc.fr/" target="_blank" rel="noreferrer">
+                                <a href={msgStr("funMoocUrl")} target="_blank" rel="noreferrer">
                                     {msg("privacyFull_cookiesLink")}
                                 </a>{" "}
                                 {msg("privacyFull_usersText2")}{" "}
-                                <a href="https://www.fun-mooc.fr/" target="_blank" rel="noreferrer">
+                                <a href={msgStr("funMoocUrl")} target="_blank" rel="noreferrer">
                                     {msg("privacyFull_cookiesLink")}
                                 </a>
                                 {msg("privacyFull_usersText3")}
