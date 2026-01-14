@@ -28,9 +28,10 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             termsTitle: "Privacy Policy & TCs",
             shortTermsTitle: "Summary of our Privacy Policy",
             longTermsTitle: "Full Version of our Privacy Policy",
-            cguTitle: "Terms and Conditions",
+            usersPolicyTitle: "Users policy",
             usernameInstruction1Title: "Visible by everyone",
-            usernameInstruction1: " : displayed publicly in any discussion or forum where you participate",
+            usernameInstruction1:
+                " : displayed publicly in any discussion or forum where you participate",
             usernameInstruction2Title: "Final",
             usernameInstruction2: " : cannot be changed later",
             usernameInstruction3Title: "Free and anonymous",
@@ -62,13 +63,15 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             termsTitle: "Politique de confidentialité & CGU",
             shortTermsTitle: "Résumé de notre politique de confidentialité",
             longTermsTitle: "Version complète de notre politique de confidentialité",
-            cguTitle: "Conditions Générales d'Utilisation",
+            usersPolicyTitle: "Charte utilisateurs",
             usernameInstruction1Title: "Visible par tous",
-            usernameInstruction1: " : s'affichera publiquement dans toute discussion ou forum où vous participerez",
+            usernameInstruction1:
+                " : s'affichera publiquement dans toute discussion ou forum où vous participerez",
             usernameInstruction2Title: "Définitif",
             usernameInstruction2: " : ne pourra pas être modifié ultérieurement",
             usernameInstruction3Title: "Libre et anonyme",
-            usernameInstruction3: " : peut ne pas faire référence à votre identité réelle",
+            usernameInstruction3:
+                " : peut ne pas faire référence à votre identité réelle",
             cguText1: "Afin de finaliser la création de votre compte, ",
             cguText2: "veuillez lire et accepter les CGU",
             cguLink: "https://www.fun-mooc.fr/fr/cgu/"

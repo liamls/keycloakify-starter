@@ -88,7 +88,7 @@ export default function Terms(props: PageProps<Extract<KcContext, { pageId: "ter
                         id="panel2-header"
                         expandIcon={<ExpandMoreIcon />}
                     >
-                        <div className="termsTitle">{msg("cguTitle")}</div>
+                        <div className="termsTitle">{msg("usersPolicyTitle")}</div>
                     </AccordionSummary>
                     <AccordionDetails>
                         <div id="kc-terms-text">{msg("termsText")}</div>

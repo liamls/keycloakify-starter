@@ -1618,7 +1618,7 @@
     },
     "loginTheme": "keycloakify-starter",
     "accountTheme": "",
-    "adminTheme": "",
+    "adminTheme": "keycloakify-starter",
     "emailTheme": "keycloakify-starter",
     "eventsEnabled": false,
     "eventsListeners": ["keycloakify-logging", "jboss-logging"],
