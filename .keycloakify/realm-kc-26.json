@@ -1703,8 +1703,8 @@
         "starttls": "false"
     },
     "loginTheme": "keycloakify-starter",
-    "accountTheme": "",
-    "adminTheme": "",
+    "accountTheme": "keycloakify-starter",
+    "adminTheme": "keycloakify-starter",
     "emailTheme": "keycloakify-starter",
     "eventsEnabled": false,
     "eventsListeners": ["keycloakify-logging", "jboss-logging"],
