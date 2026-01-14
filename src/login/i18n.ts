@@ -22,7 +22,7 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             zendesk: "contact the support.",
             zendeskUrl: "https://www.fun-mooc.help/hc/en-gb/requests/new",
             warningActivation:
-                "The account database is being updated. If you already have a FUN account, you must reactivate it to keep it. Without reactivation, your account will be deactivated. If you have already completed this reactivation, you can ignore this message.",
+                "Our login system is changing! If you already have a FUN account, please update it by creating a new password and accepting the Terms and Conditions of Use. This step is mandatory to maintain access to your account, otherwise it will be deactivated.To update your account, check the inbox of the email address associated with your account and follow the link in the message sent by no-reply@fun-edu.fr. If you have already done this, you can ignore this message.",
             optionnalField: "optional",
             passwordInstruction1: "At least 14 characters",
             passwordInstruction2: "At least one uppercase letter",
@@ -204,7 +204,7 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             zendesk: "contactez l’assistance technique.",
             zendeskUrl: "https://www.fun-mooc.help/hc/fr/requests/new",
             warningActivation:
-                "La base des comptes évolue. Si vous possédez déjà un compte FUN, vous devez le réactiver pour le conserver. Sans réactivation, votre compte sera désactivé. Si vous avez déjà procédé à cette réactivation, vous pouvez ignorer ce message.",
+                "Notre système de connexion évolue ! Si vous possédez déjà un compte FUN, merci de le mettre à jour en créant un nouveau mot de passe et en acceptant les CGU (Conditions Générales d’Utilisation). Cette étape est obligatoire pour conserver l’accès à votre compte, sans quoi il sera désactivé. Pour effectuer la mise à jour, consultez la boîte de réception de l’adresse e-mail associée à votre compte et suivez le lien indiqué dans le message envoyé par no-reply@fun-edu.fr. Si vous avez déjà réalisé cette action, vous pouvez ignorer ce message.",
             optionnalField: "optionnel",
             passwordInstruction1: "Au moins 14 caractères",
             passwordInstruction2: "Au moins une lettre majuscule",
