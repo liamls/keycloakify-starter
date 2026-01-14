@@ -106,7 +106,126 @@ export default function Terms(props: PageProps<Extract<KcContext, { pageId: "ter
                         <div className="termsTitle">{msg("longTermsTitle")}</div>
                     </AccordionSummary>
                     <AccordionDetails>
-                        <div id="kc-terms-text">{msg("termsText")}</div>
+                        <div id="kc-terms-text">
+                            <div>
+                                {msg("privacyFull_intro")}{" "}
+                                <a href="https://www.fun-mooc.fr/" target="_blank" rel="noreferrer">
+                                    {msg("privacyFull_introLink")}
+                                </a>
+                                {msg("privacyFull_introEnd")}
+                            </div>
+
+                            <h4 className="terms-subtitle">{msg("privacyFull_summaryTitle")}</h4>
+                            <div>{msg("privacyFull_summaryText1")}</div>
+                            <div>{msg("privacyFull_summaryText2")}</div>
+
+                            <h4 className="terms-subtitle">{msg("privacyFull_detailTitle")}</h4>
+                            <div>{msg("privacyFull_detailIntro")}</div>
+                            <ul className="terms-list">
+                                <li>{msg("privacyFull_detailItem1")}</li>
+                                <li>
+                                    {msg("privacyFull_detailItem2")}{" "}
+                                    <a href={msgStr("zendeskUrl")} target="_blank" rel="noreferrer">
+                                        {msg("privacyFull_detailItem2Link")}
+                                    </a>
+                                </li>
+                                <li>{msg("privacyFull_detailItem3")}</li>
+                                <li>{msg("privacyFull_detailItem4")}</li>
+                                <li>
+                                    <strong>{msg("privacyFull_detailItem5Title")}</strong>
+                                    <ul className="terms-list">
+                                        <li>{msg("privacyFull_detailItem5Sub1")}</li>
+                                        <li>{msg("privacyFull_detailItem5Sub2")}</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>{msg("privacyFull_detailItem6Title")}</strong>
+                                    <ul className="terms-list">
+                                        <li>{msg("privacyFull_detailItem6Sub1")}</li>
+                                        <li>{msg("privacyFull_detailItem6Sub2")}</li>
+                                        <li>{msg("privacyFull_detailItem6Sub3")}</li>
+                                        <li>{msg("privacyFull_detailItem6Sub4")}</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>{msg("privacyFull_detailItem7Title")}</strong>
+                                    <ul className="terms-list">
+                                        <li>{msg("privacyFull_detailItem7Sub1")}</li>
+                                        <li>{msg("privacyFull_detailItem7Sub2")}</li>
+                                        <li>{msg("privacyFull_detailItem7Sub3")}</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>{msg("privacyFull_detailItem8Title")}</strong>
+                                    <ul className="terms-list">
+                                        <li>{msg("privacyFull_detailItem8Sub1")}</li>
+                                        <li>{msg("privacyFull_detailItem8Sub2")}</li>
+                                    </ul>
+                                </li>
+                                <li>{msg("privacyFull_detailItem9")}</li>
+                                <li>
+                                    {msg("privacyFull_detailItem10")}{" "}
+                                    <a href="https://www.cnil.fr/fr/la-protection-des-donnees-dans-le-monde" target="_blank" rel="noreferrer">
+                                        {msg("privacyFull_detailItem10Link")}
+                                    </a>{" "}
+                                    {msg("privacyFull_detailItem10End")}
+                                </li>
+                                <li>{msg("privacyFull_detailItem11")}</li>
+                                <li>
+                                    {msg("privacyFull_detailItem12")}{" "}
+                                    <a href={msgStr("zendeskUrl")} target="_blank" rel="noreferrer">
+                                        {msg("privacyFull_detailItem12Link")}
+                                    </a>
+                                    {msg("privacyFull_detailItem12Mid")}{" "}
+                                    <a href="https://www.cnil.fr/fr/cnil-direct/question/844" target="_blank" rel="noreferrer">
+                                        {msg("privacyFull_detailItem12Link2")}
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <h4 className="terms-subtitle">{msg("privacyFull_cookiesTitle")}</h4>
+                            <div>
+                                {msg("privacyFull_cookiesText1")}{" "}
+                                <a href="https://www.fun-mooc.fr/" target="_blank" rel="noreferrer">
+                                    {msg("privacyFull_cookiesLink")}
+                                </a>
+                                {msg("privacyFull_cookiesText2")}
+                            </div>
+                            <div>
+                                {msg("privacyFull_cookiesText3")}{" "}
+                                <a href="https://www.fun-mooc.fr/" target="_blank" rel="noreferrer">
+                                    {msg("privacyFull_cookiesLink")}
+                                </a>{" "}
+                                {msg("privacyFull_cookiesText4")}
+                            </div>
+                            <div>
+                                {msg("privacyFull_cookiesText5")}{" "}
+                                <a href="https://www.cnil.fr/" target="_blank" rel="noreferrer">
+                                    www.cnil.fr
+                                </a>
+                                {msg("privacyFull_cookiesText6")}{" "}
+                                <a href="https://www.fun-mooc.fr/" target="_blank" rel="noreferrer">
+                                    {msg("privacyFull_cookiesLink")}
+                                </a>{" "}
+                                {msg("privacyFull_cookiesText7")}
+                            </div>
+
+                            <h4 className="terms-subtitle">{msg("privacyFull_externalTitle")}</h4>
+                            <div>{msg("privacyFull_externalText")}</div>
+
+                            <h4 className="terms-subtitle">{msg("privacyFull_usersTitle")}</h4>
+                            <div>
+                                {msg("privacyFull_usersText1")}{" "}
+                                <a href="https://www.fun-mooc.fr/" target="_blank" rel="noreferrer">
+                                    {msg("privacyFull_cookiesLink")}
+                                </a>{" "}
+                                {msg("privacyFull_usersText2")}{" "}
+                                <a href="https://www.fun-mooc.fr/" target="_blank" rel="noreferrer">
+                                    {msg("privacyFull_cookiesLink")}
+                                </a>
+                                {msg("privacyFull_usersText3")}
+                            </div>
+                        </div>
                     </AccordionDetails>
                 </Accordion>
                 <Accordion

@@ -99,3 +99,11 @@ body.kcBodyClass {
     margin-top: 1rem;
     margin-bottom: 0.5rem;
 }
+
+#kc-terms-text {
+    text-align: justify;
+}
+
+#kc-terms-text > div {
+    margin-bottom: 0.75rem;
+}
