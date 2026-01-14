@@ -246,7 +246,31 @@ export default function Terms(props: PageProps<Extract<KcContext, { pageId: "ter
                         <div className="termsTitle">{msg("usersPolicyTitle")}</div>
                     </AccordionSummary>
                     <AccordionDetails>
-                        <div id="kc-terms-text">{msg("termsText")}</div>
+                        <div id="kc-terms-text">
+                            <div>{msg("userPolicy_intro")}</div>
+
+                            <h4 className="terms-subtitle">{msg("userPolicy_recommendationsTitle")}</h4>
+                            <div>{msg("userPolicy_recommendationsIntro")}</div>
+                            <ul className="terms-list">
+                                <li>{msg("userPolicy_recommendationsItem1")}</li>
+                                <li>{msg("userPolicy_recommendationsItem2")}</li>
+                                <li>{msg("userPolicy_recommendationsItem3")}</li>
+                                <li>{msg("userPolicy_recommendationsItem4")}</li>
+                                <li>{msg("userPolicy_recommendationsItem5")}</li>
+                            </ul>
+
+                            <h4 className="terms-subtitle">{msg("userPolicy_commitmentsTitle")}</h4>
+                            <div>{msg("userPolicy_commitmentsIntro")}</div>
+                            <ul className="terms-list">
+                                <li>{msg("userPolicy_commitmentsItem1")}</li>
+                                <li>{msg("userPolicy_commitmentsItem2")}</li>
+                                <li>{msg("userPolicy_commitmentsItem3")}</li>
+                                <li>{msg("userPolicy_commitmentsItem4")}</li>
+                                <li>{msg("userPolicy_commitmentsItem5")}</li>
+                            </ul>
+
+                            <div style={{ fontStyle: "italic" }}>{msg("userPolicy_note")}</div>
+                        </div>
                     </AccordionDetails>
                 </Accordion>
             </div>

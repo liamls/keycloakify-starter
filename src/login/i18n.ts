@@ -157,7 +157,35 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             privacyFull_usersText2:
                 "designed for public communications, can be viewed and downloaded by other visitors of the",
             privacyFull_usersText3:
-                ". For this reason, we encourage you to exercise discretion before publishing any information that could be used to identify you on these forums or other public places or reserved for a course."
+                ". For this reason, we encourage you to exercise discretion before publishing any information that could be used to identify you on these forums or other public places or reserved for a course.",
+            userPolicy_intro:
+                "By registering on the site, you join a global community of learners. FUN's ambition is to provide access to the best higher education training, regardless of your geographical location.",
+            userPolicy_recommendationsTitle: "Recommendations to users",
+            userPolicy_recommendationsIntro:
+                "Unless otherwise indicated by the course instructor, you are encouraged to:",
+            userPolicy_recommendationsItem1:
+                "Participate in all course activities: watching videos, exercises, assignments, and practical work;",
+            userPolicy_recommendationsItem2:
+                "Discuss general concepts and resources of each course with other learners using the collaborative tools provided;",
+            userPolicy_recommendationsItem3:
+                "Propose ideas and possibly propose documents that you may develop, to other learners for comments;",
+            userPolicy_recommendationsItem4:
+                "Ensure that the first and last name you provide during your registration are those you wish to appear on your badges, certificates, and micro-credentials*;",
+            userPolicy_recommendationsItem5:
+                "Ensure that your username is chosen carefully as it cannot be changed - as it will be visible to other participants, it is recommended that it does not reflect your real name.",
+            userPolicy_commitmentsTitle: "User commitments",
+            userPolicy_commitmentsIntro:
+                "In addition to the rules of conduct specified in the General Terms of Use, and the Privacy Policy, you agree to:",
+            userPolicy_commitmentsItem1: "Not cheat to improve your results;",
+            userPolicy_commitmentsItem2: "Not improve or degrade the results of others;",
+            userPolicy_commitmentsItem3:
+                "Not publish answers to exercises taken into account in the final evaluation of students;",
+            userPolicy_commitmentsItem4:
+                "Respect the intellectual property rights granted by the user license attached to each online course on the site (see terms of use specified on the presentation / registration page of each course);",
+            userPolicy_commitmentsItem5:
+                "Give access to the teaching team to your data collected on the site for the needs of the followed course.",
+            userPolicy_note:
+                "Note: once badges and/or certifications are issued, it will no longer be possible to modify the first and last name on this document."
         },
         fr: {
             newsletterInfo: "Ce que nous vous enverrons :",
@@ -317,7 +345,36 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             privacyFull_usersText2:
                 "conçus pour les communications publiques, peuvent être consultés et téléchargés par d'autres visiteurs du",
             privacyFull_usersText3:
-                ". Pour cette raison, nous vous encourageons à faire preuve de discrétion avant de publier toute information qui pourrait être utilisée pour vous identifier sur ces forums ou d’autres endroits publics ou réservés à un cours."
+                ". Pour cette raison, nous vous encourageons à faire preuve de discrétion avant de publier toute information qui pourrait être utilisée pour vous identifier sur ces forums ou d’autres endroits publics ou réservés à un cours.",
+            userPolicy_intro:
+                "En vous inscrivant sur le site, vous rejoignez une communauté mondiale d'apprenants. L'ambition de FUN est de fournir un accès aux meilleures formations de l’enseignement supérieur et ce, quelle que soit votre localisation géographique.",
+            userPolicy_recommendationsTitle: "Recommandations aux utilisateurs",
+            userPolicy_recommendationsIntro:
+                "Sauf indication contraire de l'enseignant du cours, vous êtes encouragés à :",
+            userPolicy_recommendationsItem1:
+                "Participer à l’ensemble des activités d’un cours : lecture des vidéos, exercices, devoirs et travaux pratiques ;",
+            userPolicy_recommendationsItem2:
+                "Discuter avec les autres apprenants des concepts généraux et des ressources de chaque cours en utilisant les outils collaboratifs mis à disposition ;",
+            userPolicy_recommendationsItem3:
+                "Proposer des idées et éventuellement proposer les documents que vous pourrez élaborer, aux autres apprenants à des fins de commentaires ;",
+            userPolicy_recommendationsItem4:
+                "Vous assurer que les nom et prénom, que vous renseignez lors de votre inscription, sont ceux que vous souhaitez faire figurer sur vos badges, certificats et micro-certifications* ;",
+            userPolicy_recommendationsItem5:
+                "Vous assurer que votre nom d'utilisateur est choisi avec soin car il n'est pas modifiable - comme il sera visible des autres participants, il est recommandé qu'il ne reflète pas votre vrai nom.",
+            userPolicy_commitmentsTitle: "Engagements des utilisateurs",
+            userPolicy_commitmentsIntro:
+                "En complément des règles de conduite précisées dans les Conditions Générales d’Utilisation, et à la Politique de Confidentialité, vous vous engagez à :",
+            userPolicy_commitmentsItem1: "Ne pas tricher pour améliorer vos résultats ;",
+            userPolicy_commitmentsItem2:
+                "Ne pas améliorer ou dégrader les résultats des autres ;",
+            userPolicy_commitmentsItem3:
+                "Ne pas publier les réponses aux exercices pris en compte dans l’évaluation finale des étudiants ;",
+            userPolicy_commitmentsItem4:
+                "Respecter les droits de propriété intellectuelle accordés par la licence d’utilisation attachée à chaque cours en ligne sur le site (cf. conditions d’utilisation précisées sur la page de présentation / inscription de chaque cours) ;",
+            userPolicy_commitmentsItem5:
+                "Donner accès à l’équipe enseignante à vos données collectées sur le site pour les besoins du cours suivi.",
+            userPolicy_note:
+                "À noter : une fois les badges et/ou certifications éditées, il n’y aura plus de possibilité de modifier les nom et prénom sur ce document."
         }
     })
     .build();
