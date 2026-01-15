@@ -7,6 +7,7 @@ const { useI18n, ofTypeI18n } = i18nBuilder
     .withThemeName<ThemeName>()
     .withCustomTranslations({
         en: {
+            username: "Username (nickname)",
             newsletterInfo: "What we will send you:",
             newsletterInfoCheckbox1: "News about the FUN platform",
             newsletterInfoCheckbox2:
@@ -24,11 +25,11 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             warningActivation:
                 "Our login system is changing! If you already have a FUN account, please update it by creating a new password and accepting the Terms and Conditions of Use. This step is mandatory to maintain access to your account, otherwise it will be deactivated.To update your account, check the inbox of the email address associated with your account and follow the link in the message sent by no-reply@fun-edu.fr. If you have already done this, you can ignore this message.",
             optionnalField: "optional",
-            passwordInstruction1: "Between 3 and 14 characters",
-            passwordInstruction2: "At least one uppercase letter",
-            passwordInstruction3: "At least one lowercase letter",
-            passwordInstruction4: "At least one digit",
-            passwordInstruction5: "Au moins un caractère spécial",
+            passwordInstruction1: "Be at least 12 characters long",
+            passwordInstruction2: "Contains at least one uppercase letter",
+            passwordInstruction3: "Contains at least one lowercase letter",
+            passwordInstruction4: "Contains at least one digit",
+            passwordInstruction5: "Contains at least one special character",
             termsTitle: "Privacy Policy & TCs",
             shortTermsTitle: "Summary of our Privacy Policy",
             longTermsTitle: "Full Version of our Privacy Policy",
@@ -70,7 +71,7 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             privacySummary_sharedItem3:
                 "Course-producing institutions (authorized members)",
             privacySummary_sharedItem4:
-                "Institutions selling professional training",
+                "Institutions selling professional training (authorized members)",
             privacyFull_intro:
                 "The protection of your personal data (any information concerning you that you provide to us when using the ",
             privacyFull_introLink: "site",
@@ -188,6 +189,7 @@ const { useI18n, ofTypeI18n } = i18nBuilder
                 "Note: once badges and/or certifications are issued, it will no longer be possible to modify the first and last name on this document."
         },
         fr: {
+            username: "Nom d'utilisateur (pseudonyme)",
             newsletterInfo: "Ce que nous vous enverrons :",
             newsletterInfoCheckbox1: "Des nouvelles concernant la plateforme FUN",
             newsletterInfoCheckbox2:
@@ -206,11 +208,11 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             warningActivation:
                 "Notre système de connexion évolue ! Si vous possédez déjà un compte FUN, merci de le mettre à jour en créant un nouveau mot de passe et en acceptant les CGU (Conditions Générales d’Utilisation). Cette étape est obligatoire pour conserver l’accès à votre compte, sans quoi il sera désactivé. Pour effectuer la mise à jour, consultez la boîte de réception de l’adresse e-mail associée à votre compte et suivez le lien indiqué dans le message envoyé par no-reply@fun-edu.fr. Si vous avez déjà réalisé cette action, vous pouvez ignorer ce message.",
             optionnalField: "optionnel",
-            passwordInstruction1: "Entre 3 et 4 caractères",
-            passwordInstruction2: "Au moins une lettre majuscule",
-            passwordInstruction3: "Au moins une lettre minuscule",
-            passwordInstruction4: "Au moins un chiffre",
-            passwordInstruction5: "Au moins un caractère spécial",
+            passwordInstruction1: "Contenir au moins 12 caractères",
+            passwordInstruction2: "Contenir au moins une lettre majuscule",
+            passwordInstruction3: "Contenir au moins une lettre minuscule",
+            passwordInstruction4: "Contenir au moins un chiffre",
+            passwordInstruction5: "Contenir au moins un caractère spécial",
             termsTitle: "Politique de confidentialité & CGU",
             shortTermsTitle: "Résumé de notre politique de confidentialité",
             longTermsTitle: "Version complète de notre politique de confidentialité",
@@ -256,7 +258,7 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             privacySummary_sharedItem3:
                 "Les établissements producteurs de cours (membres habilités)",
             privacySummary_sharedItem4:
-                "Les établissements vendeurs de formations professionnelles",
+                "Les établissements vendeurs de formations professionnelles (membres habilités)",
             privacyFull_intro:
                 "La protection de vos données à caractère personnel (toute information vous concernant que vous nous fournissez lors de l'utilisation du",
             privacyFull_introLink: "site",
