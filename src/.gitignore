@@ -4,6 +4,7 @@
 # account/routes.tsx
 # admin/PageHeader.tsx
 # account/assets/logo.svg
+# account/personal-info/PersonalInfo.tsx
 # account/root/Header.tsx
 # account/root/PageNav.tsx
 # email/html/email-test.ftl
@@ -836,7 +837,6 @@
 /account/i18n/messages_zh_Hant.properties
 /account/oid4vci/Oid4Vci.tsx
 /account/organizations/Organizations.tsx
-/account/personal-info/PersonalInfo.tsx
 /account/resources/EditTheResource.tsx
 /account/resources/PermissionRequest.tsx
 /account/resources/Resources.tsx

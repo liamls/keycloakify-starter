@@ -47,7 +47,7 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             privacySummary_mainTitle: "FUN processes your data",
             privacySummary_rightsIntro: "In accordance with GDPR, you can at any time:",
             privacySummary_rightsItem1:
-                "Exercise your rights over your data (access, rectification, erasure, objection, withdrawal, limitation, portability)",
+                "Exercise your rights over your data (access, rectification, erasure, objection, withdrawal, restriction, portability)",
             privacySummary_rightsItem2:
                 "Contact the Data Protection Officer (dpo@fun-mooc.fr)",
             privacySummary_dataHeldTitle: "The data we hold about you:",
