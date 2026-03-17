@@ -537,7 +537,7 @@
             "username": "testuser",
             "firstName": "Test",
             "lastName": "User",
-            "email": "testuser@gmail.com",
+            "email": "testuser@localmail.com",
             "emailVerified": true,
             "attributes": {
                 "additional_emails": ["test.user@protonmail.com", "testuser@hotmail.com"],
@@ -1733,14 +1733,14 @@
                 "subComponents": {},
                 "config": {
                     "allowed-protocol-mapper-types": [
-                        "oidc-sha256-pairwise-sub-mapper",
-                        "oidc-address-mapper",
-                        "oidc-usermodel-property-mapper",
                         "saml-user-attribute-mapper",
-                        "saml-user-property-mapper",
                         "oidc-full-name-mapper",
+                        "saml-user-property-mapper",
+                        "oidc-address-mapper",
+                        "oidc-usermodel-attribute-mapper",
+                        "oidc-sha256-pairwise-sub-mapper",
                         "saml-role-list-mapper",
-                        "oidc-usermodel-attribute-mapper"
+                        "oidc-usermodel-property-mapper"
                     ]
                 }
             },
@@ -1770,14 +1770,14 @@
                 "subComponents": {},
                 "config": {
                     "allowed-protocol-mapper-types": [
+                        "saml-user-property-mapper",
                         "saml-user-attribute-mapper",
-                        "saml-role-list-mapper",
-                        "oidc-usermodel-property-mapper",
-                        "oidc-usermodel-attribute-mapper",
-                        "oidc-full-name-mapper",
-                        "oidc-sha256-pairwise-sub-mapper",
                         "oidc-address-mapper",
-                        "saml-user-property-mapper"
+                        "oidc-usermodel-attribute-mapper",
+                        "oidc-sha256-pairwise-sub-mapper",
+                        "oidc-usermodel-property-mapper",
+                        "oidc-full-name-mapper",
+                        "saml-role-list-mapper"
                     ]
                 }
             },
@@ -2554,7 +2554,7 @@
         "clientSessionMaxLifespan": "0",
         "darkMode": "true"
     },
-    "keycloakVersion": "26.4.7",
+    "keycloakVersion": "26.5.5",
     "userManagedAccessAllowed": false,
     "organizationsEnabled": false,
     "clientProfiles": {
