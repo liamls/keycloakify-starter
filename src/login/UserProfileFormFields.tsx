@@ -1,5 +1,5 @@
 import type { JSX } from "keycloakify/tools/JSX";
-import { useEffect, Fragment } from "react";
+import { useEffect, Fragment, useMemo } from "react";
 import { assert } from "keycloakify/tools/assert";
 import { useIsPasswordRevealed } from "keycloakify/tools/useIsPasswordRevealed";
 import type { KcClsx } from "keycloakify/login/lib/kcClsx";
@@ -28,9 +28,16 @@ export default function UserProfileFormFields(props: UserProfileFormFieldsProps<
         doMakeUserConfirmPassword
     });
 
+    const usernameValue = formFieldStates.find(f => f.attribute.name === "username")?.valueOrValues;
+    const isUsernameValid = useMemo(() => {
+        if (usernameValue === undefined) return true;
+        if (typeof usernameValue !== "string" || usernameValue.length === 0) return false;
+        return usernameValue.length >= 8;
+    }, [usernameValue]);
+
     useEffect(() => {
-        onIsFormSubmittableValueChange(isFormSubmittable);
-    }, [isFormSubmittable]);
+        onIsFormSubmittableValueChange(isFormSubmittable && isUsernameValid);
+    }, [isFormSubmittable, isUsernameValid]);
 
     const groupNameRef = { current: "" };
 
@@ -57,7 +64,7 @@ export default function UserProfileFormFields(props: UserProfileFormFieldsProps<
                             style={{
                                 display:
                                     attribute.annotations.inputType === "hidden" ||
-                                        (attribute.name === "password-confirm" && !doMakeUserConfirmPassword)
+                                    (attribute.name === "password-confirm" && !doMakeUserConfirmPassword)
                                         ? "none"
                                         : undefined
                             }}
@@ -128,6 +135,8 @@ export default function UserProfileFormFields(props: UserProfileFormFieldsProps<
                                             <strong>{msg("usernameInstruction3Title")}</strong>
                                             {msg("usernameInstruction3")}
                                         </li>
+                                        <li>{msg("usernameInstruction4")}</li>
+                                        <li>{msg("usernameInstruction5")}</li>
                                     </ul>
                                 )}
                                 {AfterField !== undefined && (

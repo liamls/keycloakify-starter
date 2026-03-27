@@ -42,6 +42,9 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             usernameInstruction2: " : cannot be changed later",
             usernameInstruction3Title: "Free and anonymous",
             usernameInstruction3: " : may not refer to your real identity",
+            usernameInstruction4: "Be at least 8 characters long",
+            usernameInstruction5:
+                "A unique suffix will be automatically appended to your username by our platform (e.g. pmoriarty_fun2026_x4k9mz2a)",
             cguText1: "In order to create your account, ",
             cguText2: "please read and validate the terms and conditions.",
             cguLink: "https://www.fun-mooc.fr/en/general-terms-service/",
@@ -227,6 +230,9 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             usernameInstruction3Title: "Libre et anonyme",
             usernameInstruction3:
                 " : peut ne pas faire référence à votre identité réelle",
+            usernameInstruction4: "Contenir au moins 8 caractères",
+            usernameInstruction5:
+                "Un suffixe unique sera automatiquement ajouté à votre pseudo par notre plateforme (ex. : pmoriarty_fun2026_x4k9mz2a)",
             cguText1: "Afin de finaliser la création de votre compte, ",
             cguText2: "veuillez lire et accepter les CGU",
             cguLink: "https://www.fun-mooc.fr/fr/cgu/",
