@@ -42,9 +42,11 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             usernameInstruction2: " : cannot be changed later",
             usernameInstruction3Title: "Free and anonymous",
             usernameInstruction3: " : may not refer to your real identity",
-            usernameInstruction4: "Be at least 8 characters long",
+            usernameInstruction4:
+                "Be at least 4 characters long, using only letters (a-z, A-Z), numbers, hyphens (-) and underscores (_)",
+            usernameError: "Your username must be at least 4 characters and contain only letters (a-z, A-Z), numbers, hyphens (-) and underscores (_)",
             usernameInstruction5:
-                "A unique suffix will be automatically appended to your username by our platform (e.g. pmoriarty_fun2026_x4k9mz2a)",
+                "The suffix _fun_2026 will be automatically appended to your username (e.g. pmoriarty_fun_2026)",
             cguText1: "In order to create your account, ",
             cguText2: "please read and validate the terms and conditions.",
             cguLink: "https://www.fun-mooc.fr/en/general-terms-service/",
@@ -62,8 +64,7 @@ const { useI18n, ofTypeI18n } = i18nBuilder
                 " : IP address, site activity, page visit order, cookies…",
             privacySummary_useTitle: "Why is this data used?",
             privacySummary_useItem1: "For course registration and tracking",
-            privacySummary_useItem2:
-                "To ensure platform security and account safety",
+            privacySummary_useItem2: "To ensure platform security and account safety",
             privacySummary_useItem3: "To communicate about FUN (newsletters, news…)",
             privacySummary_useItem4: "To improve courses",
             privacySummary_useItem5:
@@ -149,7 +150,7 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             privacyFull_cookiesText4:
                 "(the pages you consulted, the date and time of the consultation, etc.) that we will be able to read during your subsequent visits. In this case, it contains the information you provided. Thus, you will not need, during your next visit, to fill in the form we proposed to you again.",
             privacyFull_cookiesText5:
-                "We inform you that you can oppose the recording of cookies by configuring your browser (in the \"tools options\" menu of Mozilla Firefox, Google Chrome or Microsoft Edge). Most browsers provide instructions to refuse them in the \"Help\" section of the toolbar. The configuration of the navigation software allows to inform of the presence of cookie(s) and possibly to refuse it in the manner described at the following address:",
+                'We inform you that you can oppose the recording of cookies by configuring your browser (in the "tools options" menu of Mozilla Firefox, Google Chrome or Microsoft Edge). Most browsers provide instructions to refuse them in the "Help" section of the toolbar. The configuration of the navigation software allows to inform of the presence of cookie(s) and possibly to refuse it in the manner described at the following address:',
             privacyFull_cookiesText6:
                 ". If you refuse our cookies, functions and functionalities of this",
             privacyFull_cookiesText7: "could not work properly.",
@@ -230,9 +231,11 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             usernameInstruction3Title: "Libre et anonyme",
             usernameInstruction3:
                 " : peut ne pas faire référence à votre identité réelle",
-            usernameInstruction4: "Contenir au moins 8 caractères",
+            usernameInstruction4:
+                "Contenir au moins 4 caractères, en utilisant uniquement des lettres, des chiffres, des tirets (-) et des underscores (_)",
+            usernameError: "Votre pseudo doit contenir au moins 4 caractères et uniquement des lettres (a-z, A-Z), des chiffres, des tirets (-) et des underscores (_)",
             usernameInstruction5:
-                "Un suffixe unique sera automatiquement ajouté à votre pseudo par notre plateforme (ex. : pmoriarty_fun2026_x4k9mz2a)",
+                "Le suffixe _fun_2026 sera automatiquement ajouté à votre pseudo (ex. : pmoriarty_fun_2026)",
             cguText1: "Afin de finaliser la création de votre compte, ",
             cguText2: "veuillez lire et accepter les CGU",
             cguLink: "https://www.fun-mooc.fr/fr/cgu/",
@@ -312,7 +315,8 @@ const { useI18n, ofTypeI18n } = i18nBuilder
                 "pour suivre la fréquentation, la progression et l'achèvement d'un cours en ligne et pour analyser les statistiques sur la performance des apprenants et la façon dont ils apprennent ;",
             privacyFull_detailItem7Sub3:
                 "pour détecter des violations de la charte utilisateur, la manière d’utiliser le site ainsi que des utilisations frauduleuses ou l'étant potentiellement, maintenir et d'améliorer le fonctionnement et la sécurité du site et de nos logiciels, systèmes et réseaux.",
-            privacyFull_detailItem8Title: "pseudonymisées, elles peuvent être utilisées :",
+            privacyFull_detailItem8Title:
+                "pseudonymisées, elles peuvent être utilisées :",
             privacyFull_detailItem8Sub1:
                 "pour aider à l’amélioration de l'offre de www.fun-mooc.fr de manière globale, personnaliser l'expérience et évaluer l'accessibilité et l'impact de www.fun-mooc.fr dans la communauté éducative internationale ;",
             privacyFull_detailItem8Sub2:

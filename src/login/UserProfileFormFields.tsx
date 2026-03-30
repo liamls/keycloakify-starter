@@ -32,7 +32,7 @@ export default function UserProfileFormFields(props: UserProfileFormFieldsProps<
     const isUsernameValid = useMemo(() => {
         if (usernameValue === undefined) return true;
         if (typeof usernameValue !== "string" || usernameValue.length === 0) return false;
-        return usernameValue.length >= 8;
+        return usernameValue.length >= 4 && /^[a-zA-Z0-9_-]+$/.test(usernameValue);
     }, [usernameValue]);
 
     useEffect(() => {
@@ -102,7 +102,9 @@ export default function UserProfileFormFields(props: UserProfileFormFieldsProps<
                                     kcClsx={kcClsx}
                                     i18n={i18n}
                                 />
-                                <FieldErrors attribute={attribute} displayableErrors={displayableErrors} kcClsx={kcClsx} fieldIndex={undefined} />
+                                {attribute.name !== "username" && (
+                                    <FieldErrors attribute={attribute} displayableErrors={displayableErrors} kcClsx={kcClsx} fieldIndex={undefined} />
+                                )}
                                 {attribute.annotations.inputHelperTextAfter !== undefined && (
                                     <div
                                         className={kcClsx("kcInputHelperTextAfterClass")}
@@ -122,22 +124,29 @@ export default function UserProfileFormFields(props: UserProfileFormFieldsProps<
                                     </ul>
                                 )}
                                 {attribute.name === "username" && (
-                                    <ul className={"passwordInputHelper"} id={`form-help-text-after-${attribute.name}`} aria-live="polite">
-                                        <li>
-                                            <strong>{msg("usernameInstruction1Title")}</strong>
-                                            {msg("usernameInstruction1")}
-                                        </li>
-                                        <li>
-                                            <strong>{msg("usernameInstruction2Title")}</strong>
-                                            {msg("usernameInstruction2")}
-                                        </li>
-                                        <li>
-                                            <strong>{msg("usernameInstruction3Title")}</strong>
-                                            {msg("usernameInstruction3")}
-                                        </li>
-                                        <li>{msg("usernameInstruction4")}</li>
-                                        <li>{msg("usernameInstruction5")}</li>
-                                    </ul>
+                                    <>
+                                        {typeof usernameValue === "string" && usernameValue.length > 0 && !isUsernameValid && (
+                                            <span className={kcClsx("kcInputErrorMessageClass")} aria-live="polite">
+                                                {msg("usernameError")}
+                                            </span>
+                                        )}
+                                        <ul className={"passwordInputHelper"} id={`form-help-text-after-${attribute.name}`} aria-live="polite">
+                                            <li>
+                                                <strong>{msg("usernameInstruction1Title")}</strong>
+                                                {msg("usernameInstruction1")}
+                                            </li>
+                                            <li>
+                                                <strong>{msg("usernameInstruction2Title")}</strong>
+                                                {msg("usernameInstruction2")}
+                                            </li>
+                                            <li>
+                                                <strong>{msg("usernameInstruction3Title")}</strong>
+                                                {msg("usernameInstruction3")}
+                                            </li>
+                                            <li>{msg("usernameInstruction4")}</li>
+                                            <li>{msg("usernameInstruction5")}</li>
+                                        </ul>
+                                    </>
                                 )}
                                 {AfterField !== undefined && (
                                     <AfterField
