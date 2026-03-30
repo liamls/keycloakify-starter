@@ -24,7 +24,9 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             zendesk: "contact the support.",
             zendeskUrl: "https://www.fun-mooc.help/hc/en-gb/requests/new",
             warningActivation:
-                "Our login system is changing! If you already have a FUN account, please update it by creating a new password and accepting the Terms and Conditions of Use. This step is mandatory to maintain access to your account, otherwise it will be deactivated.To update your account, check the inbox of the email address associated with your account and follow the link in the message sent by no-reply@fun-edu.fr. If you have already done this, you can ignore this message.",
+                "Our login system is currently being updated. Some of you may be experiencing difficulties accessing your account — please know that we are doing everything we can to restore full service as quickly as possible. To help you through this transition,",
+            warningActivationLink: "follow our step-by-step guide.",
+            warningActivationLinkUrl: "https://www.fun-mooc.help/hc/en-gb/articles/34768671082781",
             optionnalField: "optional",
             passwordInstruction1: "Be at least 12 characters long",
             passwordInstruction2: "Contains at least one uppercase letter",
@@ -44,7 +46,8 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             usernameInstruction3: " : may not refer to your real identity",
             usernameInstruction4:
                 "Be at least 4 characters long, using only letters (a-z, A-Z), numbers, hyphens (-) and underscores (_)",
-            usernameError: "Your username must be at least 4 characters and contain only letters (a-z, A-Z), numbers, hyphens (-) and underscores (_)",
+            usernameError:
+                "Your username must be at least 4 characters and contain only letters (a-z, A-Z), numbers, hyphens (-) and underscores (_)",
             usernameInstruction5:
                 "The suffix _fun_2026 will be automatically appended to your username (e.g. pmoriarty_fun_2026)",
             cguText1: "In order to create your account, ",
@@ -212,7 +215,9 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             zendesk: "contactez l’assistance technique.",
             zendeskUrl: "https://www.fun-mooc.help/hc/fr/requests/new",
             warningActivation:
-                "Notre système de connexion évolue ! Si vous possédez déjà un compte FUN, merci de le mettre à jour en créant un nouveau mot de passe et en acceptant les CGU (Conditions Générales d’Utilisation). Cette étape est obligatoire pour conserver l’accès à votre compte, sans quoi il sera désactivé. Pour effectuer la mise à jour, consultez la boîte de réception de l’adresse e-mail associée à votre compte et suivez le lien indiqué dans le message envoyé par no-reply@fun-edu.fr. Si vous avez déjà réalisé cette action, vous pouvez ignorer ce message.",
+                "Notre système de connexion est en cours d’évolution. Certains d’entre vous rencontrent peut-être quelques difficultés pour accéder à votre compte. Sachez que nous mettons tout en œuvre pour rétablir la situation dans les meilleurs délais. Pour vous accompagner dans cette transition,",
+            warningActivationLink: "suivez notre guide.",
+            warningActivationLinkUrl: "https://www.fun-mooc.help/hc/fr/articles/34768671082781",
             optionnalField: "optionnel",
             passwordInstruction1: "Contenir au moins 12 caractères",
             passwordInstruction2: "Contenir au moins une lettre majuscule",
@@ -233,7 +238,8 @@ const { useI18n, ofTypeI18n } = i18nBuilder
                 " : peut ne pas faire référence à votre identité réelle",
             usernameInstruction4:
                 "Contenir au moins 4 caractères, en utilisant uniquement des lettres, des chiffres, des tirets (-) et des underscores (_)",
-            usernameError: "Votre pseudo doit contenir au moins 4 caractères et uniquement des lettres (a-z, A-Z), des chiffres, des tirets (-) et des underscores (_)",
+            usernameError:
+                "Votre pseudo doit contenir au moins 4 caractères et uniquement des lettres (a-z, A-Z), des chiffres, des tirets (-) et des underscores (_)",
             usernameInstruction5:
                 "Le suffixe _fun_2026 sera automatiquement ajouté à votre pseudo (ex. : pmoriarty_fun_2026)",
             cguText1: "Afin de finaliser la création de votre compte, ",
