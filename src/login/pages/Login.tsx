@@ -102,7 +102,8 @@ export default function Login(props: PageProps<Extract<KcContext, { pageId: "log
                     {msg("warningActivation")}{" "}
                     <a href={msgStr("warningActivationLinkUrl")} target="_blank" rel="noopener noreferrer">
                         {msgStr("warningActivationLink")}
-                    </a>
+                    </a>{" "}
+                    {msg("warningActivationEmailDelay")}
                 </div>
                 <div id="kc-form-wrapper">
                     {realm.password && (

@@ -103,9 +103,16 @@ export default function UserProfileFormFields(props: UserProfileFormFieldsProps<
                                     kcClsx={kcClsx}
                                     i18n={i18n}
                                 />
-                                {attribute.name !== "username" && (
-                                    <FieldErrors attribute={attribute} displayableErrors={displayableErrors} kcClsx={kcClsx} fieldIndex={undefined} />
-                                )}
+                                <FieldErrors
+                                    attribute={attribute}
+                                    displayableErrors={
+                                        attribute.name === "username"
+                                            ? displayableErrors.filter(e => !(e.source.type === "validator" && e.source.name === "pattern"))
+                                            : displayableErrors
+                                    }
+                                    kcClsx={kcClsx}
+                                    fieldIndex={undefined}
+                                />
                                 {attribute.annotations.inputHelperTextAfter !== undefined && (
                                     <div
                                         className={kcClsx("kcInputHelperTextAfterClass")}

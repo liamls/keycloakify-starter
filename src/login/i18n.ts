@@ -26,7 +26,10 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             warningActivation:
                 "Our login system is currently being updated. Some of you may be experiencing difficulties accessing your account — please know that we are doing everything we can to restore full service as quickly as possible. To help you through this transition,",
             warningActivationLink: "follow our step-by-step guide.",
-            warningActivationLinkUrl: "https://www.fun-mooc.help/hc/en-gb/articles/34768671082781",
+            warningActivationLinkUrl:
+                "https://www.fun-mooc.help/hc/en-gb/articles/34768671082781",
+            warningActivationEmailDelay:
+                "Emails (password reset, account activation, …) may take a few minutes to arrive. Please be patient before sending a new request.",
             optionnalField: "optional",
             passwordInstruction1: "Be at least 12 characters long",
             passwordInstruction2: "Contains at least one uppercase letter",
@@ -217,7 +220,10 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             warningActivation:
                 "Notre système de connexion est en cours d’évolution. Certains d’entre vous rencontrent peut-être quelques difficultés pour accéder à votre compte. Sachez que nous mettons tout en œuvre pour rétablir la situation dans les meilleurs délais. Pour vous accompagner dans cette transition,",
             warningActivationLink: "suivez notre guide.",
-            warningActivationLinkUrl: "https://www.fun-mooc.help/hc/fr/articles/34768671082781",
+            warningActivationLinkUrl:
+                "https://www.fun-mooc.help/hc/fr/articles/34768671082781",
+            warningActivationEmailDelay:
+                "Les e-mails (mot de passe oublié, activation de compte, …) peuvent prendre quelques minutes à arriver. Merci de patienter avant de renvoyer une demande.",
             optionnalField: "optionnel",
             passwordInstruction1: "Contenir au moins 12 caractères",
             passwordInstruction2: "Contenir au moins une lettre majuscule",
