@@ -42,7 +42,7 @@ export default function UserProfileFormFields(props: UserProfileFormFieldsProps<
     const groupNameRef = { current: "" };
 
     const { msg, msgStr } = i18n;
-    const usernameSuffix = `_fun_${new Date().getFullYear()}`;
+    const usernameSuffix = `_fun${new Date().getFullYear()}`;
 
     return (
         <>
