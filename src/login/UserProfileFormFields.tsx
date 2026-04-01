@@ -41,7 +41,8 @@ export default function UserProfileFormFields(props: UserProfileFormFieldsProps<
 
     const groupNameRef = { current: "" };
 
-    const { msg } = i18n;
+    const { msg, msgStr } = i18n;
+    const usernameSuffix = `_fun_${new Date().getFullYear()}`;
 
     return (
         <>
@@ -144,7 +145,7 @@ export default function UserProfileFormFields(props: UserProfileFormFieldsProps<
                                                 {msg("usernameInstruction3")}
                                             </li>
                                             <li>{msg("usernameInstruction4")}</li>
-                                            <li>{msg("usernameInstruction5")}</li>
+                                            <li>{msgStr("usernameInstruction5", usernameSuffix)}</li>
                                         </ul>
                                     </>
                                 )}

@@ -49,7 +49,7 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             usernameError:
                 "Your username must be at least 4 characters and contain only letters (a-z, A-Z), numbers, hyphens (-) and underscores (_)",
             usernameInstruction5:
-                "The suffix _fun_2026 will be automatically appended to your username (e.g. pmoriarty_fun_2026)",
+                "The suffix {0} will be automatically appended to your username (e.g. pmoriarty{0})",
             cguText1: "In order to create your account, ",
             cguText2: "please read and validate the terms and conditions.",
             cguLink: "https://www.fun-mooc.fr/en/general-terms-service/",
@@ -241,7 +241,7 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             usernameError:
                 "Votre pseudo doit contenir au moins 4 caractères et uniquement des lettres (a-z, A-Z), des chiffres, des tirets (-) et des underscores (_)",
             usernameInstruction5:
-                "Le suffixe _fun_2026 sera automatiquement ajouté à votre pseudo (ex. : pmoriarty_fun_2026)",
+                "Le suffixe {0} sera automatiquement ajouté à votre pseudo (ex. : pmoriarty{0})",
             cguText1: "Afin de finaliser la création de votre compte, ",
             cguText2: "veuillez lire et accepter les CGU",
             cguLink: "https://www.fun-mooc.fr/fr/cgu/",
