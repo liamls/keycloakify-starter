@@ -29,7 +29,7 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             warningActivationLinkUrl:
                 "https://www.fun-mooc.help/hc/en-gb/articles/34768671082781",
             warningActivationEmailDelay:
-                "Emails (password reset, account activation, …) may take a few minutes to arrive. Please be patient before sending a new request.",
+                "Emails (account activation, password reset, …) typically arrive within 15 minutes. If you haven't received yours yet, we kindly ask you to wait up to 2 hours before submitting a new request.",
             optionnalField: "optional",
             passwordInstruction1: "Be at least 12 characters long",
             passwordInstruction2: "Contains at least one uppercase letter",
@@ -223,7 +223,7 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             warningActivationLinkUrl:
                 "https://www.fun-mooc.help/hc/fr/articles/34768671082781",
             warningActivationEmailDelay:
-                "Les e-mails (mot de passe oublié, activation de compte, …) peuvent prendre quelques minutes à arriver. Merci de patienter avant de renvoyer une demande.",
+                "Les e-mails (activation de compte, mot de passe oublié, …) sont généralement reçus dans un délai d'environ 15 minutes. Si vous ne l'avez pas encore reçu, nous vous remercions de bien vouloir patienter jusqu'à 2 heures avant de soumettre une nouvelle demande.",
             optionnalField: "optionnel",
             passwordInstruction1: "Contenir au moins 12 caractères",
             passwordInstruction2: "Contenir au moins une lettre majuscule",
