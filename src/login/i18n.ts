@@ -27,7 +27,7 @@ const { useI18n, ofTypeI18n } = i18nBuilder
                 "Our login system is currently being updated. Some of you may be experiencing difficulties accessing your account — please know that we are doing everything we can to restore full service as quickly as possible. To help you through this transition,",
             warningActivationLink: "follow our step-by-step guide.",
             warningActivationLinkUrl:
-                "https://www.fun-mooc.help/hc/en-gb/articles/34768671082781",
+                "https://support.fun-edu.fr/s/help/doc/new-authentication-system-and-account-update-important-information-hTKBLKPTBw",
             warningActivationEmailDelay:
                 "Emails (account activation, password reset, …) typically arrive within 15 minutes. If you haven't received yours yet, we kindly ask you to wait up to 2 hours before submitting a new request.",
             optionnalField: "optional",
@@ -221,7 +221,7 @@ const { useI18n, ofTypeI18n } = i18nBuilder
                 "Notre système de connexion est en cours d’évolution. Certains d’entre vous rencontrent peut-être quelques difficultés pour accéder à votre compte. Sachez que nous mettons tout en œuvre pour rétablir la situation dans les meilleurs délais. Pour vous accompagner dans cette transition,",
             warningActivationLink: "suivez notre guide.",
             warningActivationLinkUrl:
-                "https://www.fun-mooc.help/hc/fr/articles/34768671082781",
+                "https://support.fun-edu.fr/s/aide/doc/nouveau-systeme-dauthentification-et-mise-a-jour-de-votre-compte-informations-importantes-NsOUCnmF6q",
             warningActivationEmailDelay:
                 "Les e-mails (activation de compte, mot de passe oublié, …) sont généralement reçus dans un délai d'environ 15 minutes. Si vous ne l'avez pas encore reçu, nous vous remercions de bien vouloir patienter jusqu'à 2 heures avant de soumettre une nouvelle demande.",
             optionnalField: "optionnel",
